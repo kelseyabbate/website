@@ -1,10 +1,26 @@
 /* TYPE */
 
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Poppins:300,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+@font-face{ 
+	font-family: 'Gilroy Light';
+	src: url('../fonts/gilroy-light.eot');
+	src: url('../fonts/gilroy-light.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/gilroy-light.woff') format('woff'),
+	     url('../fonts/gilroy-light.ttf') format('truetype')
+	     /*url('WebFont.svg#webfont') format('svg');*/
+}
+@font-face{ 
+	font-family: 'Gilroy Extrabold';
+	src: url('../fonts/gilroy-extrabold.eot');
+	src: url('../fonts/gilroy-extrabold.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/gilroy-extrabold.woff') format('woff'),
+	     url('../fonts/gilroy-extrabold.ttf') format('truetype')
+	     /*url('WebFont.svg#webfont') format('svg');*/
+}
 
 .primary-type
 {
-	font-family: 'Poppins', Futura, Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy Extrabold', Futura, Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1.2px;
@@ -19,7 +35,6 @@
 
 p
 {	
-	/*margin: 0 0 1em 0;*/
 	font-size: 1em;
 	line-height: 1.7;
 }
@@ -47,7 +62,7 @@ body
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 1em 2em;
-	font-family: 'Poppins', Futura, Helvetica, Arial, sans-serif;
+	font-family: 'Gilroy Light', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	letter-spacing: 1px;
 }
