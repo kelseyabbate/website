@@ -33,6 +33,18 @@
 	font-weight: normal;
 }
 
+strong
+{
+	font-family: 'Gilroy Extrabold', Futura, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+small 
+{
+	font-size: .8em;
+	letter-spacing: 1.5px;
+}
+
 p
 {	
 	font-size: 1em;
@@ -225,6 +237,12 @@ dd
 dd, dt
 {
 	font-size: .8em;
+}
+
+.img-small
+{
+	width: 200px !important;
+	margin: 2em auto 1em !important;
 }
 
 
