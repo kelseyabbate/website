@@ -18,6 +18,18 @@
 	     /*url('WebFont.svg#webfont') format('svg');*/
 }
 
+::-moz-selection
+{ 
+	color: #fff; 
+	background: #5B86E5;  
+}
+
+::selection 
+{ 
+	color: #fff; 
+	background: #5B86E5;  
+}
+
 .primary-type
 {
 	font-family: 'Gilroy Extrabold', Futura, Helvetica, Arial, sans-serif;
