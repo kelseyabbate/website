@@ -157,7 +157,12 @@ main
 	width: 100%;
 }
 
-.half img, .full img
+.third
+{
+	width: 50%;
+}
+
+.half img, .full img, .third img
 {
 	width: 100%;
 	height: auto;
@@ -311,6 +316,11 @@ dd, dt
 	{
 		width: calc( 50% - 2em);
 
+	}
+
+	.third
+	{
+		width: calc( 100% / 3 );
 	}
 
 	.full .text
