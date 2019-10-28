@@ -416,5 +416,11 @@ dd, dt
 	{
 		font-size: 1em;
 	}
+
+	.pagination, footer
+	{
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
 
