@@ -146,6 +146,8 @@ nav ul li
 .title
 {
 	text-align: center;
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 main
