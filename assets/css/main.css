@@ -91,23 +91,6 @@ a:link, a:visited
 }
 
 
-a:after {
-  content: '';
-  display: block;
-  border-bottom: 1px solid #000;
-  width: 0;
-  position: absolute;
-  left: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  bottom: -3px;
-}
-
-a:hover:after { 
-  width: 100%; 
-}
-
-
 /* LAYOUT */
 
 body
@@ -221,20 +204,14 @@ main
 	flex-grow: 1;
 }
 
-.full a:before
+.full a
 {
-	content: '';
-	display: block;
-	width: 100%;
-	position: absolute;
-	bottom: -3px;
-	left: 0;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid #ccc;
+	transition: border-bottom .1s linear;
 }
 
-.full a:hover:after
+.full a:hover
 {
-	text-decoration: none;
 	border-bottom: 1px solid #000;
 }
 
@@ -365,6 +342,47 @@ dd, dt
 	width: 200px !important;
 	margin: 2em auto 1em !important;
 }
+
+
+
+@media (hover: hover)
+{
+	header a:after 
+	{
+		content: '';
+		display: block;
+		border-bottom: 1px solid #000;
+		width: 0;
+		position: absolute;
+		left: 0;
+		-webkit-transition: .5s ease;
+		transition: .5s ease;
+		bottom: -3px;
+	}
+
+	header a:hover:after 
+	{ 
+		width: 100%; 
+	}
+
+	/*.full a:before
+	{
+		content: '';
+		display: block;
+		width: 100%;
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		border-bottom: 1px solid #aaaaaa;
+	}
+
+	.full a:hover:after
+	{
+		text-decoration: none;
+		border-bottom: 1px solid #000;
+	}*/
+}
+
 
 
 @media screen and (min-width: 825px)
