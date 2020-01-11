@@ -41,13 +41,13 @@
 .primary-type-alt
 {
 	font-size: 4em;
-	color: rgba( 0, 0, 0, .05 );
+	color: #f3f3f3;
 	text-align: left;
 }
 
 .home .primary-type-alt h1
 {
-	color: rgba( 0, 0, 0, 1 );
+	color: #000;
 	line-height: 1;
 	letter-spacing: -2px;
 }
@@ -78,7 +78,7 @@ p
 	line-height: 1.4;
 }
 
-h1
+h1, h2
 {
 	font-size: 1em;
 }
@@ -206,7 +206,7 @@ main
 
 .main-alt
 {
-	margin-top: -2em;
+	margin-top: 0;
 }
 
 .half, .full
@@ -374,7 +374,7 @@ dd, dt
 		font-size: 1.35em;
 	}
 
-	h1
+	h1, h2
 	{
 		font-size: 1.6em;
 	}
