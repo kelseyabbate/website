@@ -164,12 +164,16 @@ nav ul li
 
 .title
 {
-	width: 100%;
+	width: 90%;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .title-alt
 {
+	width: 100%;
+	margin: 0;
 	padding: 0 .2em;
 	text-align: left;
 }
