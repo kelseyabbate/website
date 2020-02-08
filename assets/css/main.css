@@ -235,16 +235,6 @@ main
 	flex-grow: 1;
 }
 
-.full a
-{
-	border-bottom: 1px solid #ccc;
-	transition: border-bottom .1s linear;
-}
-
-.full a:hover
-{
-	border-bottom: 1px solid #000;
-}
 
 .half
 {
@@ -278,12 +268,6 @@ main
 	display: inline-block;
 }
 
-.pagination a:hover
-{
-	text-decoration: none;
-	color: #fff;
-	background: #000;
-}
 
 .pagination a:after
 {
@@ -326,16 +310,12 @@ a.thumb
 {
 	display: block;
 	background-color: #000;
+	border-bottom: none !important;
 }
 
 a img
 {
 	transition: all .3s ease-in-out;
-}
-
-a:hover img
-{
-	opacity: .75;
 }
 
 
@@ -385,28 +365,57 @@ dd, dt
 	margin: 2em auto 1em !important;
 }
 
+header a, .spotlight-text a
+{
+	border-bottom: 1px solid #fff;
+	transition: border-bottom .3s ease;
+}
+
+
+.spotlight-wrap header a, .spotlight-text a
+{
+	border-bottom: 1px solid rgba( 0, 0, 0, 0);
+}
+
+
+.full a, .half a
+{
+	border-bottom: 1px solid #ccc;
+	transition: border-bottom .1s linear;
+}
 
 
 @media (hover: hover)
 {
-	header a:after 
+	a:hover img
 	{
-		content: '';
-		display: block;
-		border-bottom: 1px solid #000;
-		width: 0;
-		position: absolute;
-		left: 0;
-		-webkit-transition: .5s ease;
-		transition: .5s ease;
-		bottom: -3px;
+		opacity: .75;
 	}
 
-	header a:hover:after 
-	{ 
-		width: 100%; 
+	.pagination a:hover
+	{
+		text-decoration: none;
+		color: #fff;
+		background: #000;
+	}
+
+	header a:hover
+	{
+		border-bottom: 1px solid #000;
+	}
+
+	.spotlight-wrap header a:hover, .spotlight-text a:hover
+	{
+		border-bottom: 1px solid #fff;
+	}
+
+	.full a:hover, .half a:hover
+	{
+		border-bottom: 1px solid #000;
 	}
 }
+
+
 
 
 @media screen and (min-width: 600px)
