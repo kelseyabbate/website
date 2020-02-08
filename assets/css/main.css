@@ -301,12 +301,6 @@ footer .half
 	padding-top: 0;
 }
 
-.text
-{
-	padding-right: 1em;
-	padding-left: 1em;
-}
-
 a.thumb
 {
 	display: block;
@@ -436,6 +430,12 @@ header a, .spotlight-text a
 	{
 		width: calc( 50% - 2em);
 
+	}
+
+	.text
+	{
+		padding-right: 1em;
+		padding-left: 1em;
 	}
 }
 
