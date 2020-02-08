@@ -118,16 +118,16 @@ header
 	padding-top: 2em;
 }
 
-.featured-wrap
+.spotlight-wrap
 {
-	padding-bottom: 2em;
-	background-image: url(../../portfolio/audubon/audubon-book-1@2x.jpg);
+	padding-bottom: 1em;
+	background-image: url(../../images/spotlight-audubon.jpg);
 	background-position: center;
 	color: #fff !important;
 	position: relative;
 }
 
-.featured-wrap::before
+.spotlight-wrap::before
 {
 	width: 100%;
 	height: 100%;
@@ -137,7 +137,7 @@ header
 	top: 0;
 }
 
-.featured-wrap .primary-type-alt
+.spotlight-wrap .primary-type-alt
 {
 	max-width: 560px;
 	margin: 0 auto;
@@ -339,10 +339,17 @@ a:hover img
 }
 
 
-
 .home
 {
-	margin-bottom: 3em;
+	margin-bottom: 0em;
+}
+
+.home .spotlight-text
+{
+	display: block;
+	width: 100%;
+	margin-top: 5rem;
+	text-align: center;
 }
 
 dl
@@ -399,23 +406,6 @@ dd, dt
 	{ 
 		width: 100%; 
 	}
-
-	/*.full a:before
-	{
-		content: '';
-		display: block;
-		width: 100%;
-		position: absolute;
-		bottom: -3px;
-		left: 0;
-		border-bottom: 1px solid #aaaaaa;
-	}
-
-	.full a:hover:after
-	{
-		text-decoration: none;
-		border-bottom: 1px solid #000;
-	}*/
 }
 
 
@@ -574,9 +564,15 @@ dd, dt
 		margin-top: -11em;
 	}
 
-	.featured-wrap .primary-type-alt
+	.spotlight-wrap .primary-type-alt
 	{
 		margin: 0;
+	}
+
+	.home .spotlight-text
+	{
+		text-align: right;
+		margin-right: 1em;
 	}
 }
 
