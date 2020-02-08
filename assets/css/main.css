@@ -322,15 +322,23 @@ footer .half
 	padding-left: 1em;
 }
 
+a.thumb
+{
+	display: block;
+	background-color: #000;
+}
+
 a img
 {
-	transition: opacity .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 a:hover img
 {
-	opacity: .85;
+	opacity: .75;
 }
+
+
 
 .home
 {
