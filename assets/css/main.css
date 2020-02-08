@@ -20,47 +20,14 @@
 
 ::-moz-selection
 { 
-	color: #000; 
-	background: #ededed;  
+	color: #fff; 
+	background: #000;  
 }
 
 ::selection 
 { 
-	color: #000; 
-	background: #ededed;  
-}
-
-.primary-type
-{
-	font-family: 'Gilroy Extrabold', Futura, Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
-.primary-type-alt
-{
-	font-size: 4em;
-	color: #000;
-	text-align: left;
-	-webkit-user-select: none; /* Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+/Edge */
-	user-select: none; /* Standard */
-}
-
-.home .primary-type-alt h1
-{
-	color: #000;
-	line-height: 1;
-	letter-spacing: -2px;
-}
-
-.secondary-type, .primary-type-alt
-{
-	font-family: 'Fjalla One', 'Arial Narrow', Impact, sans-serif;
-	letter-spacing: -.5px;
-	font-weight: normal;
+	color: #fff; 
+	background: #000;  
 }
 
 strong
@@ -94,23 +61,66 @@ a:link, a:visited
 	position: relative;
 }
 
+.primary-type
+{
+	font-family: 'Gilroy Extrabold', Futura, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.primary-type-alt
+{
+	font-size: 4em;
+	color: #000;
+	text-align: left;
+	line-height: 1;
+	letter-spacing: -2px;
+	-webkit-user-select: none;       
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+.secondary-type
+{
+	letter-spacing: -.5px;
+}
+
+.secondary-type, .primary-type-alt
+{
+	font-family: 'Fjalla One', 'Arial Narrow', Impact, sans-serif;
+	font-weight: normal;
+}
+
+.primary-type-alt small
+{
+	margin-top: 16px;
+	position: absolute;
+}
+
+
 
 /* LAYOUT */
 
 body
 {
-	max-width: 1200px;
 	margin: 0 auto;
-	padding: 1em .25em;
 	font-family: 'Gilroy Light', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	letter-spacing: .5px;
 }
 
-/*.featured-wrap
+header
 {
-	margin: -1.75em -1.75em 0 -1.75em;
-	padding: 1.75em 1.75em 0 1.75em;
+	max-width: 1168px;
+	margin: 0 auto 4em;
+	padding-top: 2em;
+}
+
+.featured-wrap
+{
+	padding-bottom: 2em;
 	background-image: url(../../portfolio/audubon/audubon-book-1@2x.jpg);
 	background-position: center;
 	color: #fff !important;
@@ -121,19 +131,20 @@ body
 {
 	width: 100%;
 	height: 100%;
-	margin: -1.75em -1.75em 0 -1.75em;
-	padding: 1.75em 1.75em 0 1.75em;
 	content: '';
 	background: rgba( 0, 0, 0, .5);
 	position: absolute;
 	top: 0;
-}*/
+}
 
-header
+.featured-wrap .primary-type-alt
 {
-	width: 100%;
-	margin-top: 1em;
-	margin-bottom: 4em;
+	max-width: 560px;
+	margin: 0 auto;
+	padding: 0 .5rem;
+	color: rgba( 255,255,255, 1);
+	mix-blend-mode: difference;
+	z-index: 1;
 }
 
 .logotype
@@ -178,8 +189,7 @@ nav ul li
 {
 	width: 100%;
 	margin: 0;
-	padding: 0 .2em;
-	text-align: left;
+	text-align: center;
 }
 
 .title-alt h1
@@ -190,9 +200,18 @@ nav ul li
 
 main
 {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1em 0;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+}
+
+.main-alt
+{
+	margin-top: 0;
 }
 
 .spacer
@@ -202,14 +221,11 @@ main
 	height: 2em;
 }
 
-.main-alt
-{
-	margin-top: 0;
-}
 
 .half, .full
 {
-	margin: 1em;
+	margin: 1em 0;
+	padding: 0 2em;
 	display: inline-block;
 }
 
@@ -273,16 +289,11 @@ main
 {
 	display: none;
 }
-	
-.pagination, footer
-{
-	padding-right: 2em;
-	padding-left: 2em;
-}
-
 
 footer
 {
+	max-width: 1190px;
+	margin: 0 auto;
 	color: #6B6B6B;
 	font-size: .7em;
 }
@@ -290,6 +301,7 @@ footer
 footer .half
 {
 	margin: 0 auto;
+	padding: 0;
 	text-align: center;
 	display: block;
 }
@@ -399,6 +411,27 @@ dd, dt
 }
 
 
+@media screen and (min-width: 600px)
+{
+	main
+	{
+		width: calc( 100% - 2em);
+		padding: 1em;
+	}
+
+	.half, .full
+	{
+		padding: 0 1em;
+	}
+
+	.half
+	{
+		width: calc( 50% - 2em);
+
+	}
+}
+
+
 
 @media screen and (min-width: 825px)
 {
@@ -414,7 +447,9 @@ dd, dt
 
 	header
 	{
-		margin-top: 0;
+		width: calc( 100% - 4em);
+		margin: 0 auto;
+		padding: 1em 2em 3em;
 		display: flex;
 		flex-wrap: nowrap;
 		align-items: center;
@@ -423,7 +458,7 @@ dd, dt
 	.logotype
 	{
 		width: 50%;
-		margin-left: .5em;
+		/*margin-left: .5em;*/
 		text-align: left;
 		font-size: 1.8em;
 	}
@@ -446,13 +481,12 @@ dd, dt
 
 	nav ul li:last-child
 	{
-		padding-right: 1.5em;
+		padding-right: 0;
 	}
 
-	.half
+	.inner .primary-type-alt h1
 	{
-		width: calc( 50% - 2em);
-
+		margin-left: .1em;
 	}
 
 	.third
@@ -506,8 +540,8 @@ dd, dt
 
 	.pagination, footer
 	{
-		padding-right: 0;
-		padding-left: 0;
+		padding-right: 2em;
+		padding-left: 2em;
 	}
 
 	.primary-type-alt
@@ -517,14 +551,13 @@ dd, dt
 
 	.primary-type-alt h1
 	{
-		margin: 0 0 0 -15px;
-		font-size: 2.5em;
+		margin: 0;
+		font-size: 2em;
 	}
 
 	.title-alt
 	{
 		margin: 0;
-		padding: 0 .25em;
 		text-align: left !important;
 	}
 
@@ -532,13 +565,18 @@ dd, dt
 	{
 		margin-top: -11em;
 	}
+
+	.featured-wrap .primary-type-alt
+	{
+		margin: 0;
+	}
 }
 
 @media screen and (min-width: 1000px)
 {
 	.primary-type-alt h1
 	{
-		font-size: 3em;
+		font-size: 2em;
 	}
 }
 
