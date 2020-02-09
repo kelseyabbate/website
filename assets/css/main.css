@@ -356,7 +356,7 @@ dd, dt
 
 .img-small
 {
-	width: 200px !important;
+	width: 150px !important;
 	margin: 2em auto 1em !important;
 }
 
@@ -436,6 +436,11 @@ header a, .spotlight-text a
 	{
 		padding-right: 1em;
 		padding-left: 1em;
+	}
+
+	.img-small
+	{
+		width: 200px !important;
 	}
 }
 
