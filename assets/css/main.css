@@ -33,7 +33,6 @@
 strong
 {
 	font-family: 'Gilroy Extrabold', Futura, Helvetica, Arial, sans-serif;
-	font-weight: 700;
 }
 
 small 
@@ -46,7 +45,7 @@ p
 {	
 	margin-bottom: 1.5em;
 	font-size: 1em;
-	line-height: 1.4;
+	line-height: 1.6;
 }
 
 h1, h2
@@ -64,7 +63,6 @@ a:link, a:visited
 .primary-type
 {
 	font-family: 'Gilroy Extrabold', Futura, Helvetica, Arial, sans-serif;
-	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -99,6 +97,11 @@ a:link, a:visited
 	position: absolute;
 }
 
+h1, h2, h3, h4, h5, h6
+{
+	font-weight: normal;
+}
+
 
 
 /* LAYOUT */
@@ -107,8 +110,8 @@ body
 {
 	margin: 0 auto;
 	font-family: 'Gilroy Light', Helvetica, Arial, sans-serif;
-	font-weight: 300;
 	letter-spacing: .5px;
+	-webkit-font-smoothing: antialiased;
 }
 
 header
@@ -133,7 +136,7 @@ header
 	width: 100%;
 	height: 100%;
 	content: '';
-	background: rgba( 0, 0, 0, .5);
+	background: rgba( 0, 0, 0, .4);
 	position: absolute;
 	top: 0;
 }
@@ -261,11 +264,26 @@ main
 	display: block;
 }
 
+.button
+{
+	margin: 1em auto 0;
+	padding: 1em;
+	border: 1px solid #000 !important;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.button a:after
+{
+	display: none;
+}
+
 .pagination
 {
-	margin: 5em auto;
+	margin: 4em auto 5em;
 	text-align: center;
-	font-size: .9em;
+	font-size: 1em;
 }
 
 .pagination h4
@@ -276,21 +294,13 @@ main
 .pagination a:link
 {
 	margin-bottom: .5em;
-	padding: 1em;
-	border: 1px solid;
 	display: inline-block;
 }
 
 
-.pagination a:after
-{
-	display: none;
-}
-
 .pagination small
 {
 	font-family: 'Gilroy Light', Helvetica, Arial, sans-serif;
-	font-weight: 300;
 	font-size: .7em;
 }
 
@@ -430,7 +440,7 @@ header a, .spotlight-text a
 		opacity: .75;
 	}
 
-	.pagination a:hover
+	.button:hover
 	{
 		text-decoration: none;
 		color: #fff;
