@@ -255,7 +255,17 @@ main
 	align-items: center;
 }
 
+.inner
+{
+	padding: 0;
+}
+
 .main-alt
+{
+	margin-top: 0;
+}
+
+.main-alt .text
 {
 	margin-top: 0;
 }
@@ -643,6 +653,17 @@ header a, .spotlight-text a
 	.inner .primary-type-alt h1
 	{
 		margin-left: -.025em;
+	}
+
+	.inner
+	{
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.main-alt .text
+	{
+		margin-top: 2em;
 	}
 
 	.third
