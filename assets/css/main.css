@@ -28,6 +28,11 @@
 
 }
 
+html
+{
+	-webkit-text-size-adjust: 100%;
+}
+
 ::-moz-selection
 { 
 	color: #fff; 
