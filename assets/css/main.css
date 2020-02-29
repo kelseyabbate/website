@@ -47,6 +47,10 @@ header {
 	margin: 0 auto 4em;
 	padding-top: 2em; }
 
+header a {
+	border-bottom: 1px solid #fff;
+	transition: border-bottom .3s ease; }
+
 .logotype {
 	width: 100%;
 	font-family: 'League Gothic', 'Arial Narrow', Impact, sans-serif;
@@ -165,12 +169,14 @@ footer {
 	margin: 1em auto 0;
 	padding: 1em;
 	display: inline-block;
+	background-color: #fff;
 	border: 1px solid #000 !important;
 	font-family: 'League Gothic', 'Arial Narrow', Impact, sans-serif;
 	font-size: 1.25em;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 1; }
+	line-height: 1;
+	transition: background-color .3s ease; }
 
 .button a:after {
 	display: none; }
@@ -188,6 +194,7 @@ a img {
 
 .img-small {
 	width: 150px !important;
+	height: auto;
 	margin: 2em auto 1em !important; }
 
 a.thumb {
@@ -346,7 +353,7 @@ footer .half {
 
 .text a {
 	border-bottom: 1px solid #ccc;
-	transition: border-bottom .1s linear; }
+	transition: border-bottom .3s ease, background-color .3s ease; }
 
 
 /* LAYOUT - WEBSITES PAGE **********/
@@ -385,7 +392,7 @@ footer .half {
 
 	.button:hover {
 		text-decoration: none;
-		background: #000;
+		background-color: #000;
 		color: #fff; }
 
 	header a:hover {
