@@ -233,8 +233,10 @@ a.thumb {
 .spotlight-wrap {
 	margin-bottom: 1.25em;
 	padding-bottom: 1em;
-	background-image: url(../../images/spotlight-audubon.jpg);
+	background-image: url(../../images/spotlight-eofc.jpg);
 	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #201f24;
 	position: relative;
 	color: #fff !important; }
 
@@ -257,7 +259,7 @@ a.thumb {
 	line-height: .85;
 	letter-spacing: 0;
 	color: rgba( 255,255,255, 1);
-	mix-blend-mode: difference;
+	mix-blend-mode: screen;
 	z-index: 1; }
 
 /* Comma */
@@ -561,7 +563,7 @@ footer .half {
 	.cards .half {
 		width: calc( (100% / 3) - .5em); } }
 
-@media screen and (min-width: 2400px) {
+@media screen and (min-width: 2000px) {
 	
 	.cards .half {
 		width: calc( 25% - .5em); } }
