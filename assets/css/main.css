@@ -98,7 +98,7 @@ small {
 	letter-spacing: 1.5px; }
 
 main {
-	max-width: 1200px;
+	max-width: 1600px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 1em 0;
@@ -356,6 +356,12 @@ footer .half {
 	transition: border-bottom .3s ease, background-color .3s ease; }
 
 
+/* LAYOUT - LOGOS PAGE **********/
+
+.logos {
+	max-width: 1200px; }
+
+
 /* LAYOUT - WEBSITES PAGE **********/
 
 .spacer {
@@ -428,7 +434,11 @@ footer .half {
 		width: 200px !important; }
 
 	.third-text-details {
-		width: 50%; } }
+		width: 50%; } 
+
+	.intro {
+		display: flex;
+		align-items: center; } }
 
 @media screen and (min-width: 825px) {
 	
@@ -538,7 +548,15 @@ footer .half {
 	footer .half:last-child {
 		text-align: right; } }
 
+@media screen and (min-width: 1200px) {
+	
+	.intro .half .text {
+		padding: 3em 3em; } }
+
 @media screen and (min-width: 1600px) {
+
+	.intro .half .text {
+		padding: 3em 6em; }
 	
 	.cards .half {
 		width: calc( (100% / 3) - .5em); } }
