@@ -334,7 +334,7 @@ a.thumb {
 	padding-left: 1.5em; }
 
 .half {
-	width: 100%;
+	width: calc( 100% -1em);
 	margin: .25em 0;
 	padding: 0 .5em;
 	display: inline-block; }
@@ -356,6 +356,9 @@ footer .half {
 .text a {
 	border-bottom: 1px solid #ccc;
 	transition: border-bottom .3s ease, background-color .3s ease; }
+
+.intro {
+	padding: 0 .5em; }
 
 
 /* LAYOUT - LOGOS PAGE **********/
