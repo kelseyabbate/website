@@ -432,6 +432,7 @@ footer .half {
 
 .logos {
 	max-width: 1200px;
+	align-items: flex-start !important;
 }
 
 
