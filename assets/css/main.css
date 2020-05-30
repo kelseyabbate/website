@@ -210,6 +210,10 @@ footer {
 	display: none;
 }
 
+.button-group {
+	text-align: center;
+}
+
 
 /* IMAGES **********/
 
@@ -278,6 +282,7 @@ a.thumb {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #201f24;
+	background-attachment: fixed;
 	position: relative;
 	color: #fff !important;
 }
@@ -430,7 +435,7 @@ footer .half {
 
 /* LAYOUT - LOGOS PAGE **********/
 
-.logos {
+.third-group {
 	max-width: 1200px;
 	align-items: flex-start !important;
 }
@@ -442,6 +447,11 @@ footer .half {
 	width: 100%;
 	height: .5em;
 	display: block;
+}
+
+.masonry
+{
+	align-items: flex-start !important;
 }
 
 
