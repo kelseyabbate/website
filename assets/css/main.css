@@ -215,7 +215,7 @@ footer {
 }
 
 
-/* IMAGES **********/
+/* IMAGES AND THUMBS **********/
 
 a img {
 	transition: all .3s ease-in-out;
@@ -237,6 +237,37 @@ a.thumb {
 	display: block;
 	background-color: #000;
 	border-bottom: none !important;
+	position: relative;
+}
+
+.thumb-overlay {
+	width: calc( 100% - 4em);
+	height: calc( 100% - 4em);
+	margin: 0 auto;
+	padding: 2em;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	transition: opacity .3s ease-in-out;
+	transition-delay: .2s;
+	text-align: center;
+}
+
+.thumb-overlay h2 {
+	margin: 1rem auto;
+	font-family: 'League Gothic', 'Arial Narrow', Impact, sans-serif;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.thumb-overlay h4 {
+	margin: 0;
 }
 
 
@@ -282,7 +313,6 @@ a.thumb {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #201f24;
-	background-attachment: fixed;
 	position: relative;
 	color: #fff !important;
 }
@@ -440,6 +470,41 @@ footer .half {
 	align-items: flex-start !important;
 }
 
+/* LAYOUT - BRANDS SECTION **********/
+
+.brands {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.brands ul {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.brands li {
+	padding: 3em;
+	width: 150px;
+	/*flex-basis: 25%;*/
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	list-style: none;
+	vertical-align: middle;
+}
+
+.brands img {
+	margin: 0 auto;
+	display: block;
+}
+
+
 
 /* LAYOUT - WEBSITES PAGE **********/
 
@@ -483,7 +548,12 @@ footer .half {
 @media (hover: hover) {
 	
 	a:hover img {
-		opacity: .75;
+		opacity: .1;
+	}
+
+	a:hover .thumb-overlay
+	{
+		opacity: 1;
 	}
 
 	.button:hover {
@@ -502,6 +572,10 @@ footer .half {
 
 	.text a:hover {
 		border-bottom: 1px solid #000;
+	}
+
+	.spotlight-wrap {
+		background-attachment: fixed;
 	}
 }
 
