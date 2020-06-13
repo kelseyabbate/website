@@ -156,6 +156,15 @@ footer {
 	color: #6B6B6B;
 }
 
+img {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;    
+}
+
 
 /* TYPE STYLES **********/
 
@@ -255,7 +264,6 @@ a.thumb {
 	align-items: center;
 	color: #fff;
 	transition: opacity .3s ease-in-out;
-	transition-delay: .2s;
 	text-align: center;
 }
 
