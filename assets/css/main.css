@@ -538,7 +538,10 @@ footer .half {
 }
 
 .pagination h4 {
+	width: 90%;
+	margin-right: auto;
 	margin-bottom: 0;
+	margin-left: auto;
 }
 
 .pagination a:link {
