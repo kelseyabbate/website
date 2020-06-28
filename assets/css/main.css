@@ -270,7 +270,7 @@ a.thumb {
 .thumb-overlay h2 {
 	margin: 1rem auto;
 	font-family: 'League Gothic', 'Arial Narrow', Impact, sans-serif;
-	font-size: 3em;
+	font-size: 2em;
 	text-transform: uppercase;
 }
 
@@ -442,6 +442,7 @@ a.thumb {
 	margin: .25em 0;
 	padding: 0 .5em;
 	display: inline-block;
+	position: relative;
 }
 
 footer .half {
@@ -623,6 +624,14 @@ footer .half {
 		display: flex;
 		align-items: flex-start;
 	}
+
+	.thumb-overlay h2 {
+		font-size: 1.5em;
+	}
+
+	.thumb-overlay h4 {
+		font-size: .8em;
+	}
 }
 
 @media screen and (min-width: 825px) {
@@ -767,12 +776,24 @@ footer .half {
 	footer .half:last-child {
 		text-align: right;
 	}
+
+	.thumb-overlay h2 {
+		font-size: 2.5em;
+	}
+
+	.thumb-overlay h4 {
+		font-size: 1em;
+	}
 }
 
 @media screen and (min-width: 1200px) {
 	
 	.intro .half .text {
 		padding: 3em 3em;
+	}
+
+	.thumb-overlay h2 {
+		font-size: 3em;
 	}
 }
 
