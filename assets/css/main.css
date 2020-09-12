@@ -322,6 +322,7 @@ a.thumb {
 	background-repeat: no-repeat;
 	background-color: #201f24;
 	position: relative;
+	background-size: 150%;
 	color: #fff !important;
 }
 
@@ -396,6 +397,12 @@ a.thumb {
   		.spotlight-wrap .primary-alt {
     		-webkit-text-stroke: 0;
     		-webkit-text-fill-color: none;
+    	}
+
+    	.spotlight-wrap
+    	{
+    		background-position: 200px center;
+    		background-size: 100%;
     	}
     } 
 }
