@@ -486,6 +486,12 @@ footer .half {
 	align-items: flex-start !important;
 }
 
+.logos .third 
+{
+	width: calc( (100% / 2) - 3em );
+	padding: 1.5em;
+}
+
 /* LAYOUT - BRANDS SECTION **********/
 
 .brands {
@@ -507,7 +513,6 @@ footer .half {
 .brands li {
 	padding: 3em;
 	width: 150px;
-	/*flex-basis: 25%;*/
 	display: inline-block;
 	margin: 0 auto;
 	text-align: center;
@@ -793,6 +798,12 @@ footer .half {
 
 	.thumb-overlay h4 {
 		font-size: 1em;
+	}
+
+	.logos .third 
+	{
+		width: calc( (100% / 3) - 4em );
+		padding: 2em;
 	}
 }
 
