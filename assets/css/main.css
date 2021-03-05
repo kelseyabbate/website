@@ -301,16 +301,24 @@ img {
 
 /* LAYOUT - WEBSITES PAGE **********/
 
-/*.spacer {
-	width: 100%;
-	height: .5em;
-	display: block;
+.website-collection .inset {
+	padding-top: 0;
+	margin-top: 25px;
+	align-items: flex-start;
 }
 
-.masonry
-{
-	align-items: flex-start !important;
-}*/
+.website-collection .inset a {
+	text-decoration: underline;
+}
+
+.website-collection h5, p {
+	margin-top: 0;
+}
+
+.website-collection h5 {
+	flex-basis: 45%;
+	margin-right: 30px;
+}
 
 
 /* FOOTER **********/
@@ -500,7 +508,11 @@ footer h2 a:link, a:visited
 
 	dl {
 		flex-basis: 33%;
-	}	
+	}
+
+	.website-collection .inset {
+		margin-top: 45px;
+	}
 
 	footer {
 		margin-top: 60px;
