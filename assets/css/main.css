@@ -132,6 +132,10 @@ main .inset {
 	height: auto;
 }
 
+.more {
+	order: 3;
+}
+
 /* CONTENT **********/
 
 .title {
@@ -240,7 +244,7 @@ h1 {
 
 h2 {
 	margin: .5rem 0;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: 400;
 }
 
@@ -612,7 +616,7 @@ footer h2 a:link, a:visited
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.75em;
 	}
 
 	h3 {
@@ -654,7 +658,7 @@ footer h2 a:link, a:visited
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
 
 	.inset {
 		width: calc( 100% - 228px );
@@ -699,10 +703,6 @@ footer h2 a:link, a:visited
 		flex-flow: row wrap;
 		flex-direction: row;
 	}
-
-	/*dl:nth-last-of-type(2) {
-		margin-bottom: 30px;
-	}*/
 
 	footer .wrap {
 		padding-bottom: 30px;

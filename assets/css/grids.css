@@ -14,7 +14,7 @@
 /* LAYOUT - CARDS **********/
 
 .cards {
-	padding-bottom: 90px;
+	padding-bottom: 60px;
 }
 
 .card-grid {
@@ -56,6 +56,12 @@
 	transition: all .6s;
 }
 
+.card-grid .two-third,
+.card-grid .half,
+.card-grid .third {
+	margin-bottom: 30px;
+}
+
 
 /* LAYOUT - CLIENTS SECTION - LOGOS PAGE **********/
 
@@ -91,7 +97,9 @@
 
 @media screen and (min-width: 400px) {
 
-	.card-grid .half, .card-grid .two-third, .card-grid .third {
+	.card-grid .two-third,
+	.card-grid .half,
+	.card-grid .third {
 		width: 100%;
 	}
 
@@ -109,10 +117,11 @@
 }
 
 @media screen and (min-width: 600px) {
-	.card-grid .half,
 	.card-grid .two-third,
+	.card-grid .half,
 	.card-grid .third {
 		width: calc( 50% - 10px );
+		margin-bottom: 20px;
 	}
 
 	.client-grid {
@@ -127,6 +136,7 @@
 	.clients {
 		padding-bottom: 0;
 	}
+
 }
 
 @media screen and (min-width: 1025px) {
@@ -152,6 +162,7 @@
 	.card-grid .half,
 	.card-grid .third {
 		width: auto;
+		margin-bottom: 0;
 		position: relative;
 		justify-self: stretch;
     	align-self: stretch;
@@ -228,7 +239,7 @@
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
 
 	.card-grid .two-third, .two-third .card-details {
 		height: 730px;
