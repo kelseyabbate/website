@@ -2,7 +2,7 @@
 
 	.card-grid div:hover .image,
 	.card-grid div:focus .image {
-  		transform: scale(1.2);
+  		transform: scale(1.1);
 	}
 
 	.card-grid div:hover .label h5,
