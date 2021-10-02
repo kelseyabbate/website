@@ -136,6 +136,14 @@ main .inset {
 	order: 3;
 }
 
+.about .text {
+	width: auto;
+}
+
+.about .text:first-child {
+	padding-right: 30px;
+}
+
 /* CONTENT **********/
 
 .title {
@@ -260,6 +268,7 @@ h3 {
 
 h4 {
 	font-weight: 500;
+	font-size: .9em;
 }
 
 h5 {
@@ -427,6 +436,11 @@ footer h2 a:link, a:visited
 		padding-bottom: 20px;
 	}
 
+	.about {
+		display: flex;
+		justify-content: space-between;
+	}
+
 	header {
 		display: flex;
 		align-content: center;
@@ -560,7 +574,7 @@ footer h2 a:link, a:visited
 	footer .third:nth-child(1) {
 		flex-grow: 1;
 		flex-basis: 22%;
-		text-align: left;
+		text-align: center;
 	}
 
 	footer .third:nth-child(2) {
@@ -572,7 +586,7 @@ footer h2 a:link, a:visited
 	footer .third:nth-child(3) {
 		flex-grow: 1;
 		flex-basis: 22%;
-		text-align: left;
+		text-align: center;
 	}
 
 	.website-collection p {
@@ -673,6 +687,10 @@ footer h2 a:link, a:visited
 
 	h3 {
 		font-size: 1.375em;
+	}
+
+	h4 {
+		font-size: 1em;
 	}
 
 	h5, p, nav ul li {
