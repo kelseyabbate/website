@@ -85,7 +85,7 @@ nav ul {
 
 nav ul li {
 	font-size: .9em;
-	font-weight: 400;
+	font-weight: 500;
 	list-style: none;
 	color: #839198;
 }
@@ -245,16 +245,21 @@ p {
 	font-size: .8em;
 }
 
+/*h1, h2, h5 
+{
+	font-family: 'Sora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}*/
+
 h1 {
 	margin: 0 0 30px;
-	font-weight: 500;
+	font-weight: 700;
 	line-height: 1.3;
 }
 
 h2 {
 	margin: .5rem 0;
 	font-size: 1.3em;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 h3 {
@@ -678,7 +683,7 @@ footer h2 a:link, a:visited
 
 	h1 {
 		margin: 0 60px 60px 0;
-		font-size: 2.7em;
+		font-size: 4.7em;
 	}
 
 	h2 {
